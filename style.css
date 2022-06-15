@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');        
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: hsl(0, 100%, 74%)  url(img/bg-intro-desktop.png);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: multiply;
+        }
+        .displayNone {
+            display: none !important;
+        }
+        .main_container {
+            position: relative;
+            display: grid;
+            width: 67%;
+            height: fit-content;
+            grid-template-columns: 1fr 1fr;            
+            grid-gap: 25px;
+            font-family: 'Poppins';
+            /* overflow: hidden; */
+            /* border-radius: 10px; */
+        }
+        .main_container > div{
+            position: relative;
+            width: 100%;
+            min-height: 420px;
+            /* padding: 40px;  */
+            /* background: rgba(220, 20, 60, 0.295);           */
+        }
+
+        .main_container > .left_side{
+            background: none;          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+        .main_container > .left_side p{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        .main_container > .right_side {
+            width: 100%;
+            /* border-radius: 7px; */
+        }
+
+        .main_container > .right_side > div {
+            border-radius: 7px;
+            box-shadow: 0px 7px 0px rgb(0 0 0 / 0.2);
+        }
+        .main_container > .right_side .top{
+            background: hsl(248, 32%, 49%) ;          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 25px;            
+        }
+        .main_container > .right_side .bottom{
+            position: relative;
+            background: white ;          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            width: 100%;
+            padding: 25px 0;
+        }
+
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            box-sizing:border-box;
+            /* padding: 0 50px; */
+        }
+        form .input_container {
+            width: 100%;
+            position: relative;
+            margin-bottom: 15px;
+            box-shadow: none;
+        }
+        form .input_container img{
+            position: absolute;
+            top: 12px;
+            right: 15px;
+        }
+        form .input_container > small{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 11px;
+            color: hsl(0, 100%, 74%);
+        }
+
+        form input {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            padding: 15px 20px;
+            font-size: 16px;
+            color: hsl(249, 10%, 26%);
+            border: 1px solid hsl(246, 25%, 77%);
+            
+            border-radius: 5px;
+            font-weight: 600;
+            box-sizing:border-box;
+        }
+        form input.error {
+            border: 1px solid hsl(0, 100%, 74%);
+        }
+        form input:active {
+            border: 1px solid hsl(249, 10%, 26%);
+        }
+        form button {
+            padding: 15px 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: hsl(154, 59%, 51%);
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            font-family: 'Poppins';
+            cursor: pointer;
+        }
+
+        form > small {
+            margin-top: 7px;
+            font-size: 11px;
+            color: hsl(246, 25%, 77%);
+        }
+        form > small a{
+            text-decoration: none;
+            color: hsl(0, 100%, 74%);
+            font-weight: 600;
+        }
+
+
+        @media (max-width: 375px) {
+            body {
+                align-items: unset;
+                height: unset;
+                padding-bottom: 50px;
+            }
+            .main_container {
+                grid-template-rows: 1fr 1fr; 
+                grid-gap: 25px; 
+                grid-template-columns: unset;
+                overflow: unset;
+                border-radius: unset;
+                height: unset;
+                min-height: 420px;
+                padding: 50px 0;
+                text-align: center;
+            }
+            
+
+        @media (min-width: 1440px) {
+            
+            body {
+                align-items: center;                
+            }
+            .main_container {
+                grid-template-columns: 1fr 1fr ; 
+                grid-gap: 15px; 
+                overflow: hidden;
+                border-radius: 10px;
+                height: fit-content;
+                padding: 50px 0;
+            }
+
+            .main_container {
+                position: relative;
+                display: grid;
+                width: 67%;
+                height: fit-content;
+                grid-template-columns: 1fr 1fr;            
+                grid-gap: 25px;
+                font-family: 'Poppins';
+                /* overflow: hidden; */
+                /* border-radius: 10px; */
+            }
+        }
+        

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main_container">
+        <div class="left_side">
+            <h1>Learn to code by watching others</h1>
+            <p>
+                See how experienced developers solve problems in real time. Watching scripted tutorials is great, but understanding how devellopers think is invaluable.
+            </p>
+        </div>
+        <div class="right_side">
+            <div class="top">
+                <span><strong>Try it free 7 days</strong>&nbsp; then $20/mo, thereafter.</span>
+            </div>
+            <div class="bottom">
+                <form name="registration" onsubmit="return formValidation()">
+                    
+                    <div class="input_container" id="firstNameContainer">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <img class="displayNone" src="./img/icon-error.svg" alt="">
+                        <small class="displayNone"><i>First Name cannot be empty</i></small>
+                    </div>
+
+                    <div class="input_container" id="lastNameContainer">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <img class="displayNone" src="./img/icon-error.svg" alt="">
+                        <small class="displayNone"><i>Last Name cannot be empty</i></small>
+                    </div>
+
+                    <div class="input_container" id="emailAdressContainer">
+                        <input type="text" name="emailAdress" id="emailAdress" placeholder="Email Adress">
+                        <img class="displayNone" src="./img/icon-error.svg" alt="">
+                        <small class="displayNone"><i>Looks like this is not an email</i></small>
+                    </div>
+
+                    <div class="input_container" id="passwordContainer">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <img class="displayNone" src="./img/icon-error.svg" alt="">
+                        <small class="displayNone"><i>Password length must be between 8-16 characters</i></small>
+                    </div>
+
+                    <button id="submitBtn" type="submit">CLAIM YOUR FREE TRIAL</button>
+                    
+                    <small>
+                        By clicking the button you agree to our <a href="#">Terms and Services.</a>
+                    </small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
